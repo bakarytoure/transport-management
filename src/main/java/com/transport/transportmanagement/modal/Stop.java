@@ -14,7 +14,7 @@ public class Stop {
     @Column(name="stop")
     private String stop;
     @Lob
-    @Column(name="image")
+    @Column(name="imagebus1")
     private byte [] image;
     @ManyToOne(fetch = FetchType.LAZY, optional = false, cascade = CascadeType.ALL)
     @JoinColumn(name="city_id",nullable = false)

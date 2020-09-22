@@ -20,7 +20,7 @@ public class Line {
     private Long number;
     @Column
     private String link;
-    @Column
+    @Column(length = 100000)
     private String destination;
     @ManyToOne(fetch = FetchType.LAZY, optional = false, cascade = CascadeType.ALL)
     @JoinColumn(name = "city_id", nullable = false)
